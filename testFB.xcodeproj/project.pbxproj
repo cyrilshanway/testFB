@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6987E55E14370DB59B1E649B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2B3E6C5B2030617972B7BC /* libPods.a */; };
+		769A66531A2EFF6600570B5B /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 769A66521A2EFF6600570B5B /* Book.m */; };
+		769A66551A2F065200570B5B /* myBook_back2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 769A66541A2F065200570B5B /* myBook_back2.jpg */; };
+		769A66571A2F065900570B5B /* myBook_back1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 769A66561A2F065900570B5B /* myBook_back1.jpg */; };
+		769A66591A2F0B9300570B5B /* 1417619560_699017-icon-30-book-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 769A66581A2F0B9300570B5B /* 1417619560_699017-icon-30-book-128.png */; };
+		769A665D1A2F0FF400570B5B /* default_pic-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 769A665C1A2F0FF400570B5B /* default_pic-128.png */; };
+		769A66601A2F3DEA00570B5B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769A665F1A2F3DEA00570B5B /* HomeViewController.m */; };
 		76C9D45D1A21DE0000C5BD61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D45C1A21DE0000C5BD61 /* main.m */; };
 		76C9D4601A21DE0000C5BD61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D45F1A21DE0000C5BD61 /* AppDelegate.m */; };
 		76C9D4631A21DE0000C5BD61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D4621A21DE0000C5BD61 /* ViewController.m */; };
@@ -14,6 +21,18 @@
 		76C9D4681A21DE0000C5BD61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D4671A21DE0000C5BD61 /* Images.xcassets */; };
 		76C9D46B1A21DE0000C5BD61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D4691A21DE0000C5BD61 /* LaunchScreen.xib */; };
 		76C9D4771A21DE0100C5BD61 /* testFBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D4761A21DE0100C5BD61 /* testFBTests.m */; };
+		76C9D4811A21DE2F00C5BD61 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C9D4801A21DE2F00C5BD61 /* Social.framework */; };
+		76C9D4831A21DFBC00C5BD61 /* mario.ico in Resources */ = {isa = PBXBuildFile; fileRef = 76C9D4821A21DFBC00C5BD61 /* mario.ico */; };
+		76CA37741A2EA59B000009AE /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CA37621A2EA59B000009AE /* AFHTTPClient.m */; };
+		76CA37751A2EA59B000009AE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CA37641A2EA59B000009AE /* AFHTTPRequestOperation.m */; };
+		76CA37761A2EA59B000009AE /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CA37661A2EA59B000009AE /* AFImageRequestOperation.m */; };
+		76CA37771A2EA59B000009AE /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CA37681A2EA59B000009AE /* AFJSONRequestOperation.m */; };
+		76CA37781A2EA59B000009AE /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CA376A1A2EA59B000009AE /* AFNetworkActivityIndicatorManager.m */; };
+		76CA37791A2EA59B000009AE /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CA376D1A2EA59B000009AE /* AFPropertyListRequestOperation.m */; };
+		76CA377A1A2EA59B000009AE /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CA376F1A2EA59B000009AE /* AFURLConnectionOperation.m */; };
+		76CA377B1A2EA59B000009AE /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CA37711A2EA59B000009AE /* AFXMLRequestOperation.m */; };
+		76CA377C1A2EA59B000009AE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CA37731A2EA59B000009AE /* UIImageView+AFNetworking.m */; };
+		76CB1EDD1A3078D000FE0D9B /* ShoBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CB1EDC1A3078D000FE0D9B /* ShoBookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08FBB8ED53753DCD9EBAAE08 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4D87ECCDC4F40E582C3C9FB3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		769A66511A2EFF6600570B5B /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		769A66521A2EFF6600570B5B /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		769A66541A2F065200570B5B /* myBook_back2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = myBook_back2.jpg; sourceTree = "<group>"; };
+		769A66561A2F065900570B5B /* myBook_back1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = myBook_back1.jpg; sourceTree = "<group>"; };
+		769A66581A2F0B9300570B5B /* 1417619560_699017-icon-30-book-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1417619560_699017-icon-30-book-128.png"; sourceTree = "<group>"; };
+		769A665C1A2F0FF400570B5B /* default_pic-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_pic-128.png"; sourceTree = "<group>"; };
+		769A665E1A2F3DEA00570B5B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		769A665F1A2F3DEA00570B5B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		76C9D4571A21DE0000C5BD61 /* testFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C9D45B1A21DE0000C5BD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C9D45C1A21DE0000C5BD61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +69,30 @@
 		76C9D4701A21DE0100C5BD61 /* testFBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testFBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C9D4751A21DE0100C5BD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C9D4761A21DE0100C5BD61 /* testFBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testFBTests.m; sourceTree = "<group>"; };
+		76C9D4801A21DE2F00C5BD61 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		76C9D4821A21DFBC00C5BD61 /* mario.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = mario.ico; sourceTree = "<group>"; };
+		76CA37611A2EA59B000009AE /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		76CA37621A2EA59B000009AE /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		76CA37631A2EA59B000009AE /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		76CA37641A2EA59B000009AE /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		76CA37651A2EA59B000009AE /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		76CA37661A2EA59B000009AE /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		76CA37671A2EA59B000009AE /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		76CA37681A2EA59B000009AE /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		76CA37691A2EA59B000009AE /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		76CA376A1A2EA59B000009AE /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		76CA376B1A2EA59B000009AE /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		76CA376C1A2EA59B000009AE /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		76CA376D1A2EA59B000009AE /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		76CA376E1A2EA59B000009AE /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		76CA376F1A2EA59B000009AE /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		76CA37701A2EA59B000009AE /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		76CA37711A2EA59B000009AE /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		76CA37721A2EA59B000009AE /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		76CA37731A2EA59B000009AE /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		76CB1EDB1A3078D000FE0D9B /* ShoBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoBookViewController.h; sourceTree = "<group>"; };
+		76CB1EDC1A3078D000FE0D9B /* ShoBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoBookViewController.m; sourceTree = "<group>"; };
+		7F2B3E6C5B2030617972B7BC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C9D4811A21DE2F00C5BD61 /* Social.framework in Frameworks */,
+				6987E55E14370DB59B1E649B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +115,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11BE3092E73C5ECE6AED26B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F2B3E6C5B2030617972B7BC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		364405A922E517554E382043 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D87ECCDC4F40E582C3C9FB3 /* Pods.debug.xcconfig */,
+				08FBB8ED53753DCD9EBAAE08 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		76C9D44E1A21DE0000C5BD61 = {
 			isa = PBXGroup;
 			children = (
+				76CA37601A2EA59B000009AE /* AFNetworking */,
+				76C9D4801A21DE2F00C5BD61 /* Social.framework */,
 				76C9D4591A21DE0000C5BD61 /* testFB */,
 				76C9D4731A21DE0100C5BD61 /* testFBTests */,
 				76C9D4581A21DE0000C5BD61 /* Products */,
+				364405A922E517554E382043 /* Pods */,
+				11BE3092E73C5ECE6AED26B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,12 +159,18 @@
 			children = (
 				76C9D45E1A21DE0000C5BD61 /* AppDelegate.h */,
 				76C9D45F1A21DE0000C5BD61 /* AppDelegate.m */,
+				769A665E1A2F3DEA00570B5B /* HomeViewController.h */,
+				769A665F1A2F3DEA00570B5B /* HomeViewController.m */,
 				76C9D4611A21DE0000C5BD61 /* ViewController.h */,
 				76C9D4621A21DE0000C5BD61 /* ViewController.m */,
+				76CB1EDB1A3078D000FE0D9B /* ShoBookViewController.h */,
+				76CB1EDC1A3078D000FE0D9B /* ShoBookViewController.m */,
 				76C9D4641A21DE0000C5BD61 /* Main.storyboard */,
 				76C9D4671A21DE0000C5BD61 /* Images.xcassets */,
 				76C9D4691A21DE0000C5BD61 /* LaunchScreen.xib */,
 				76C9D45A1A21DE0000C5BD61 /* Supporting Files */,
+				769A66511A2EFF6600570B5B /* Book.h */,
+				769A66521A2EFF6600570B5B /* Book.m */,
 			);
 			path = testFB;
 			sourceTree = "<group>";
@@ -96,6 +178,11 @@
 		76C9D45A1A21DE0000C5BD61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				769A665C1A2F0FF400570B5B /* default_pic-128.png */,
+				769A66581A2F0B9300570B5B /* 1417619560_699017-icon-30-book-128.png */,
+				769A66561A2F065900570B5B /* myBook_back1.jpg */,
+				769A66541A2F065200570B5B /* myBook_back2.jpg */,
+				76C9D4821A21DFBC00C5BD61 /* mario.ico */,
 				76C9D45B1A21DE0000C5BD61 /* Info.plist */,
 				76C9D45C1A21DE0000C5BD61 /* main.m */,
 			);
@@ -119,6 +206,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		76CA37601A2EA59B000009AE /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				76CA37611A2EA59B000009AE /* AFHTTPClient.h */,
+				76CA37621A2EA59B000009AE /* AFHTTPClient.m */,
+				76CA37631A2EA59B000009AE /* AFHTTPRequestOperation.h */,
+				76CA37641A2EA59B000009AE /* AFHTTPRequestOperation.m */,
+				76CA37651A2EA59B000009AE /* AFImageRequestOperation.h */,
+				76CA37661A2EA59B000009AE /* AFImageRequestOperation.m */,
+				76CA37671A2EA59B000009AE /* AFJSONRequestOperation.h */,
+				76CA37681A2EA59B000009AE /* AFJSONRequestOperation.m */,
+				76CA37691A2EA59B000009AE /* AFNetworkActivityIndicatorManager.h */,
+				76CA376A1A2EA59B000009AE /* AFNetworkActivityIndicatorManager.m */,
+				76CA376B1A2EA59B000009AE /* AFNetworking.h */,
+				76CA376C1A2EA59B000009AE /* AFPropertyListRequestOperation.h */,
+				76CA376D1A2EA59B000009AE /* AFPropertyListRequestOperation.m */,
+				76CA376E1A2EA59B000009AE /* AFURLConnectionOperation.h */,
+				76CA376F1A2EA59B000009AE /* AFURLConnectionOperation.m */,
+				76CA37701A2EA59B000009AE /* AFXMLRequestOperation.h */,
+				76CA37711A2EA59B000009AE /* AFXMLRequestOperation.m */,
+				76CA37721A2EA59B000009AE /* UIImageView+AFNetworking.h */,
+				76CA37731A2EA59B000009AE /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76C9D47A1A21DE0100C5BD61 /* Build configuration list for PBXNativeTarget "testFB" */;
 			buildPhases = (
+				BA5BE1CF2D3FEAB2458E453D /* Check Pods Manifest.lock */,
 				76C9D4531A21DE0000C5BD61 /* Sources */,
 				76C9D4541A21DE0000C5BD61 /* Frameworks */,
 				76C9D4551A21DE0000C5BD61 /* Resources */,
+				E368B0BDA137D909B92062EA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,7 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				76C9D4661A21DE0000C5BD61 /* Main.storyboard in Resources */,
+				769A66551A2F065200570B5B /* myBook_back2.jpg in Resources */,
+				769A66591A2F0B9300570B5B /* 1417619560_699017-icon-30-book-128.png in Resources */,
 				76C9D46B1A21DE0000C5BD61 /* LaunchScreen.xib in Resources */,
+				769A66571A2F065900570B5B /* myBook_back1.jpg in Resources */,
+				76C9D4831A21DFBC00C5BD61 /* mario.ico in Resources */,
+				769A665D1A2F0FF400570B5B /* default_pic-128.png in Resources */,
 				76C9D4681A21DE0000C5BD61 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,14 +334,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA5BE1CF2D3FEAB2458E453D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E368B0BDA137D909B92062EA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76C9D4531A21DE0000C5BD61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769A66531A2EFF6600570B5B /* Book.m in Sources */,
+				76CA37761A2EA59B000009AE /* AFImageRequestOperation.m in Sources */,
 				76C9D4631A21DE0000C5BD61 /* ViewController.m in Sources */,
+				76CA37791A2EA59B000009AE /* AFPropertyListRequestOperation.m in Sources */,
 				76C9D4601A21DE0000C5BD61 /* AppDelegate.m in Sources */,
+				769A66601A2F3DEA00570B5B /* HomeViewController.m in Sources */,
+				76CA377A1A2EA59B000009AE /* AFURLConnectionOperation.m in Sources */,
+				76CA377B1A2EA59B000009AE /* AFXMLRequestOperation.m in Sources */,
+				76CB1EDD1A3078D000FE0D9B /* ShoBookViewController.m in Sources */,
+				76CA37771A2EA59B000009AE /* AFJSONRequestOperation.m in Sources */,
+				76CA377C1A2EA59B000009AE /* UIImageView+AFNetworking.m in Sources */,
+				76CA37781A2EA59B000009AE /* AFNetworkActivityIndicatorManager.m in Sources */,
+				76CA37751A2EA59B000009AE /* AFHTTPRequestOperation.m in Sources */,
 				76C9D45D1A21DE0000C5BD61 /* main.m in Sources */,
+				76CA37741A2EA59B000009AE /* AFHTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +506,13 @@
 		};
 		76C9D47B1A21DE0100C5BD61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D87ECCDC4F40E582C3C9FB3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testFB",
+				);
 				INFOPLIST_FILE = testFB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,8 +521,13 @@
 		};
 		76C9D47C1A21DE0100C5BD61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08FBB8ED53753DCD9EBAAE08 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testFB",
+				);
 				INFOPLIST_FILE = testFB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +587,7 @@
 				76C9D47C1A21DE0100C5BD61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76C9D47D1A21DE0100C5BD61 /* Build configuration list for PBXNativeTarget "testFBTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +596,7 @@
 				76C9D47F1A21DE0100C5BD61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
