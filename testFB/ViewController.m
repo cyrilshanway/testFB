@@ -45,83 +45,24 @@
 //    [self.view addSubview:loginView];
     
     
-    NSString *token = [FBSession activeSession].accessTokenData.accessToken;
-    NSLog(@"token: %@", token);
+    NSString *access_token = [FBSession activeSession].accessTokenData.accessToken;
+    NSLog(@"access_token: %@", access_token);
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:token forKey:@"fb_token"];
-    //[defaults setObject:self.userEmailTextField.text forKey:@"email"];
+    [defaults setObject:access_token forKey:@"access_token"];
+    
     [defaults synchronize];
     
-    [self getDuReadingURL];
+    //[self getDuReadingURL];
     
     [self loadData];
     
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (void)loadData{
-    //1. 準備HTTP Client
-    AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://106.185.55.19/"]];
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *fb_token = [defaults objectForKey:@"fb_token"];
-
-    
-    //11/28
-    NSString *token = fb_token;
-    
-    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
-                            fb_token,@"fb_token",
-                            nil];
-    
-    NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST"
-                                                            path:@"api/v1/books"
-                                                      parameters:params];//dictionary
-    //2.準備operation
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    [httpClient registerHTTPOperationClass:[AFHTTPRequestOperation class]];
-    
-    //3.準備callback block
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-#pragma mark - progressed 完成
-        //載入完成
-        
-        
-        NSString *tmp = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        //test log
-        //NSLog(@"Response: %@",tmp);
-#pragma mark - 轉資料11/26
-        
-        //Generate NSDictionary
-        NSData *rawData = [tmp dataUsingEncoding:NSUTF8StringEncoding];
-        
-        NSError *e1;
-        
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:rawData options:NSJSONReadingMutableContainers error:&e1];
-        
-        //Generate JSON data(11/28)想要存在local端
-        NSError *e2;
-        NSData *jsondata = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&e2];
-        NSLog(@"json data: %@",jsondata);
-        
-        //step.4
-        //[self getDuReadingURL];
-                
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error");
-    }];
-    
-    //4. Start傳輸
-    [operation start];
-}
-
-
 
 -(NSMutableArray*) isbnArray{
     
@@ -196,16 +137,94 @@
 }
 
 
+- (void)loadData{
+    //1. 準備HTTP Client
+    AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://106.185.55.19/"]];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *access_token = [defaults objectForKey:@"access_token"];
+
+    
+    
+    //11/28
+    //NSString *token = fb_token;
+    
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+                            access_token,@"access_token",
+                            nil];
+    
+    NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST"
+                                                            path:@"api/v1/login"
+                                                      parameters:params];//dictionary
+    //2.準備operation
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    [httpClient registerHTTPOperationClass:[AFHTTPRequestOperation class]];
+    
+    //3.準備callback block
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+#pragma mark - progressed 完成
+        //載入完成
+        
+        
+        NSString *tmp = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+        //test log
+        NSLog(@"Response: %@",tmp);
+        
+        
+#pragma mark - 轉資料11/26
+        
+        //Generate NSDictionary
+        NSData *rawData = [tmp dataUsingEncoding:NSUTF8StringEncoding];
+        
+        NSError *e1;
+        
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:rawData options:NSJSONReadingMutableContainers error:&e1];
+        
+        //Generate JSON data(11/28)想要存在local端
+        NSError *e2;
+        NSData *jsondata = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&e2];
+        NSLog(@"json data: %@",jsondata);
+        
+        //抓auth_token
+        
+        
+        
+        NSString *tmp_auth = [dict objectForKey:@"auth_token"];
+        
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+         [defaults setObject:tmp_auth forKey:@"auth_token"];
+        
+        //step.4
+        [self getDuReadingURL];
+                
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error");
+    }];
+    
+    //4. Start傳輸
+    [operation start];
+}
+
+
+
+
+
 
 - (void)getDuReadingURL{
     //1. 準備HTTP Client
-//    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
-//                            fb_token,@"fb_token",
-//                            nil];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *auth_token = [defaults objectForKey:@"auth_token"];
+    
+    
+    //NSString *auth_token = fb_token;
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+                            auth_token,@"auth_token",
+                            nil];
     
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://106.185.55.19/"]];
     NSMutableURLRequest *request = [httpClient requestWithMethod:@"GET"
-                                                            path:@"api/v1/books" parameters:nil];
+                                                            path:@"api/v1/books"
+                                                      parameters:params];
     //2.準備operation
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     [httpClient registerHTTPOperationClass:[AFHTTPRequestOperation class]];
@@ -219,6 +238,12 @@
         NSData *rawData = [tmp dataUsingEncoding:NSUTF8StringEncoding];
         
         NSError *e1;
+        
+        
+        
+        
+        
+        
         //裝isbn
         NSMutableArray *currentIsbnArray = [[NSMutableArray alloc] init];
         //裝封面(做處理)
@@ -237,6 +262,12 @@
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:rawData options:NSJSONReadingMutableContainers error:&e1];
         //NSArray *bookInfo1 = dict[@"books"];
         NSInteger arrayNum = [dict[@"books"] count];
+        
+        //Generate JSON data(11/28)想要存在local端
+        NSError *e2;
+        NSData *jsondata = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&e2];
+        NSLog(@"json data: %@",jsondata);
+        
         
         //NSLog(@"%@",dict[@"books"][0][@"id"]);
         
@@ -401,6 +432,8 @@
     myNewBook.title = _finalBookDict[@"title"];
     myNewBook.bookPublisher = _finalBookDict[@"publisher"];
     myNewBook.imageAuthor = _showPicArray2[aNum];
+    
+    UIImageView *imv = [[UIImageView alloc] initWithImage:myNewBook.imageAuthor];
     
     NSLog(@"%@",[ myNewBook.bookCommentArray[0] objectForKey:@"id"]);
     

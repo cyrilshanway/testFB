@@ -65,6 +65,41 @@
             </objects>
             <point key="canvasLocation" x="283.5" y="443.5"/>
         </scene>
+        <!--Table Show Book View Controller-->
+        <scene sceneID="kL8-Yt-0jJ">
+            <objects>
+                <viewController id="wQy-xV-Kbl" customClass="tableShowBookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zzd-6B-UUb"/>
+                        <viewControllerLayoutGuide type="bottom" id="9N6-Qk-dbA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uG5-Hc-f7w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="myBook_back1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QO2-Dk-beK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="s95-Kp-e16">
+                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="wQy-xV-Kbl" id="Jev-QK-fQy"/>
+                                    <outlet property="delegate" destination="wQy-xV-Kbl" id="wbq-ps-GgK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="s95-Kp-e16" id="IYh-Um-2e5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYN-gZ-WBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266" y="1160"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="CWm-BW-qlh">
             <objects>

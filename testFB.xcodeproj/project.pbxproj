@@ -14,6 +14,8 @@
 		769A66591A2F0B9300570B5B /* 1417619560_699017-icon-30-book-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 769A66581A2F0B9300570B5B /* 1417619560_699017-icon-30-book-128.png */; };
 		769A665D1A2F0FF400570B5B /* default_pic-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 769A665C1A2F0FF400570B5B /* default_pic-128.png */; };
 		769A66601A2F3DEA00570B5B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769A665F1A2F3DEA00570B5B /* HomeViewController.m */; };
+		76B9EB1B1A319F050089021C /* tableShowBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B9EB1A1A319F050089021C /* tableShowBookViewController.m */; };
+		76C558DC1A34065D00D62624 /* acebook-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C558DB1A34065D00D62624 /* acebook-128.png */; };
 		76C9D45D1A21DE0000C5BD61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D45C1A21DE0000C5BD61 /* main.m */; };
 		76C9D4601A21DE0000C5BD61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D45F1A21DE0000C5BD61 /* AppDelegate.m */; };
 		76C9D4631A21DE0000C5BD61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C9D4621A21DE0000C5BD61 /* ViewController.m */; };
@@ -56,6 +58,9 @@
 		769A665C1A2F0FF400570B5B /* default_pic-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_pic-128.png"; sourceTree = "<group>"; };
 		769A665E1A2F3DEA00570B5B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		769A665F1A2F3DEA00570B5B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		76B9EB191A319F050089021C /* tableShowBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableShowBookViewController.h; sourceTree = "<group>"; };
+		76B9EB1A1A319F050089021C /* tableShowBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableShowBookViewController.m; sourceTree = "<group>"; };
+		76C558DB1A34065D00D62624 /* acebook-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "acebook-128.png"; sourceTree = "<group>"; };
 		76C9D4571A21DE0000C5BD61 /* testFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C9D45B1A21DE0000C5BD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C9D45C1A21DE0000C5BD61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -171,6 +176,8 @@
 				76C9D45A1A21DE0000C5BD61 /* Supporting Files */,
 				769A66511A2EFF6600570B5B /* Book.h */,
 				769A66521A2EFF6600570B5B /* Book.m */,
+				76B9EB191A319F050089021C /* tableShowBookViewController.h */,
+				76B9EB1A1A319F050089021C /* tableShowBookViewController.m */,
 			);
 			path = testFB;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 		76C9D45A1A21DE0000C5BD61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				76C558DB1A34065D00D62624 /* acebook-128.png */,
 				769A665C1A2F0FF400570B5B /* default_pic-128.png */,
 				769A66581A2F0B9300570B5B /* 1417619560_699017-icon-30-book-128.png */,
 				769A66561A2F065900570B5B /* myBook_back1.jpg */,
@@ -314,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C558DC1A34065D00D62624 /* acebook-128.png in Resources */,
 				76C9D4661A21DE0000C5BD61 /* Main.storyboard in Resources */,
 				769A66551A2F065200570B5B /* myBook_back2.jpg in Resources */,
 				769A66591A2F0B9300570B5B /* 1417619560_699017-icon-30-book-128.png in Resources */,
@@ -383,6 +392,7 @@
 				76CB1EDD1A3078D000FE0D9B /* ShoBookViewController.m in Sources */,
 				76CA37771A2EA59B000009AE /* AFJSONRequestOperation.m in Sources */,
 				76CA377C1A2EA59B000009AE /* UIImageView+AFNetworking.m in Sources */,
+				76B9EB1B1A319F050089021C /* tableShowBookViewController.m in Sources */,
 				76CA37781A2EA59B000009AE /* AFNetworkActivityIndicatorManager.m in Sources */,
 				76CA37751A2EA59B000009AE /* AFHTTPRequestOperation.m in Sources */,
 				76C9D45D1A21DE0000C5BD61 /* main.m in Sources */,

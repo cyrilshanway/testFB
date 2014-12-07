@@ -23,6 +23,8 @@
     
     FBLoginView *loginView = [[FBLoginView alloc] init];
     loginView.center = self.view.center;
+    
+    //loginView.frame = CGRectOffset(loginView.frame, (self.view.center.x - (loginView.frame.size.width / 2)), 5);
     [self.view addSubview:loginView];
 
     

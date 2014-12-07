@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EAFB7343-83EF-410B-9272-F45F08AA1666</string>
+	<key>IDESourceControlProjectName</key>
+	<string>testFB</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>61C56709E9372FAF86B30D1405F66F7151FACB16</key>
+		<string>https://github.com/cyrilshanway/testFB.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>testFB.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>61C56709E9372FAF86B30D1405F66F7151FACB16</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cyrilshanway/testFB.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>61C56709E9372FAF86B30D1405F66F7151FACB16</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>61C56709E9372FAF86B30D1405F66F7151FACB16</string>
+			<key>IDESourceControlWCCName</key>
+			<string>testFB</string>
+		</dict>
+	</array>
+</dict>
+</plist>
