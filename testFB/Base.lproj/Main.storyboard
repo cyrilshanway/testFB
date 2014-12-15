@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="R4t-QU-9pV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="R4t-QU-9pV">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -25,10 +25,40 @@
                                     <segue destination="vXZ-lx-hvc" kind="modal" id="ADK-fQ-shi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cB-O8-oEW">
+                                <rect key="frame" x="68" y="430" width="239" height="30"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="照相">
+                                    <color key="titleColor" red="0.84313725490000002" green="0.80392156859999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePicBtnPressed:" destination="R4t-QU-9pV" eventType="touchUpInside" id="647-Fv-BTB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C7c-nf-3a5">
+                                <rect key="frame" x="68" y="83" width="240" height="240"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrg-jW-VgF">
+                                <rect key="frame" x="68" y="366" width="239" height="30"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.80392156859999997" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="登入">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="R4t-QU-9pV" eventType="touchUpInside" id="F1i-eR-fqj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="C7c-nf-3a5" id="Ow2-J6-aaP"/>
+                        <outlet property="loginBtn" destination="Nrg-jW-VgF" id="Xdd-fX-A04"/>
+                        <outlet property="takePicBtn" destination="1cB-O8-oEW" id="6pi-PI-prd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0S2-to-UNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

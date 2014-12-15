@@ -324,84 +324,126 @@
         NSMutableArray *buttonList= [NSMutableArray arrayWithCapacity:self.isbnArray.count];
         
         //pic轉檔
-        for (int i =0; i < currentPicArray.count; i++) {
-            UIImage *result;
-            NSString *imgurlTrans = currentPicArray[i];
-            NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imgurlTrans]];
-            
-            result = [UIImage imageWithData:data];
-            
-            [showPicArray addObject:result];
-            
-            //NSLog(@"pic: %@", array1[i][@"imageUrl"]);
-            //self.backgroundScrollView.imageView.image = result;
-        }
-        _showPicArray2 = showPicArray;
+//        for (int i =0; i < currentPicArray.count; i++) {
+//            UIImage *result;
+//            NSString *imgurlTrans = currentPicArray[i];
+//            NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imgurlTrans]];
+//            
+//            result = [UIImage imageWithData:data];
+//            
+//            [showPicArray addObject:result];
+//            
+//            //NSLog(@"pic: %@", array1[i][@"imageUrl"]);
+//            //self.backgroundScrollView.imageView.image = result;
+//        }
+//        _showPicArray2 = showPicArray;
         
         //------------------AFImageRequestOperation----------------------//
         //因為不是同步處理照片，接下來往下走就要存照片，那pic的array就是空的，會當掉
         
-//        for (int i = 0 ; i < [currentPicArray count]; i++) {
-//            //NSString *urlStr = [_dataSource[i] objectForKey:@"featured_image"];
-//            NSString *urlString = currentPicArray[i];
-//            NSString *imageRequestURL = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//            NSURL *imageURL = [NSURL URLWithString:imageRequestURL];
-//            
-//            AFImageRequestOperation* imageOperation = [AFImageRequestOperation imageRequestOperationWithRequest: [NSURLRequest requestWithURL:imageURL] success:^(UIImage *image) {
-//                [showPicArray addObject:image];
-//                //[showPicArray setObject:image atIndexedSubscript:i];
-//                //[self.tableView reloadData];
-//            }];
-//            
-//            NSOperationQueue* queue = [[NSOperationQueue alloc] init];
-//            [queue addOperation:imageOperation];
-//            [imageOperation start];
-//        }
-        
+        for (int i = 0 ; i < [currentPicArray count]; i++) {
+            //NSString *urlStr = [_dataSource[i] objectForKey:@"default_pic-128.png"];
+            NSString *urlString = currentPicArray[i];
+            
+            NSString *imageRequestURL = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            NSURL *imageURL = [NSURL URLWithString:imageRequestURL];
+            
+            AFImageRequestOperation* imageOperation = [AFImageRequestOperation imageRequestOperationWithRequest: [NSURLRequest requestWithURL:imageURL] success:^(UIImage *image) {
+                [showPicArray addObject:image];
+                [showPicArray setObject:image atIndexedSubscript:i];
+                  [self.backgroundScrollView reloadInputViews];
+                for (int i = 0 ; i < currentIsbnArray.count; i++) {
+                    
+                    NSInteger x = 40;
+                    NSInteger y1 = 106;
+                    NSInteger y = 0;
+                    //NSInteger w = 40;
+                    NSInteger h = 100;//height
+                    NSInteger g = 40;//間隔
+                    
+                    if( (i % 2) == 0) {
+                        x = 69;
+                        y = y1 + 0.5*( h + g )* (i-1);
+                    }
+                    else {
+                        x = 240;
+                        y = y1 + 0.5*( h + g )* (i-2);
+                    }
+                    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(x, y, 34, 98)];
+                    [bgView setBackgroundColor:[UIColor grayColor]];
+                    UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 34, 98)];
+                    
+                    //[imageView setImage:[UIImage imageNamed:[imageArray2 objectAtIndex:i]]];
+                    //imageView.image = [imageArray2 objectAtIndex:i];
+                    //先試試都放default
+                    imageView.image = [showPicArray objectAtIndex:i];
+                    
+                    [imageView setContentMode:UIViewContentModeScaleAspectFill];
+                    [bgView addSubview:imageView];
+                    
+                    [imageList addObject:bgView];
+                    
+                    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(x+5, y+5, 90, 110)];
+                    button.backgroundColor = [UIColor grayColor];
+                    
+                    button.alpha = 1;
+                    [buttonList addObject:button];
+                    [button setTag:i];
+                    [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+                    [self.backgroundScrollView addSubview:bgView];
+                    [self.backgroundScrollView addSubview:button];
+                //[self.tableView reloadData];
+                }}];
+            
+            NSOperationQueue* queue = [[NSOperationQueue alloc] init];
+            [queue addOperation:imageOperation];
+            [imageOperation start];
+        }
+
         
         //------------------------------------------------//
-        for (int i = 0 ; i < currentIsbnArray.count; i++) {
+//        for (int i = 0 ; i < currentIsbnArray.count; i++) {
+//            
+//            NSInteger x = 40;
+//            NSInteger y1 = 46;
+//            NSInteger y = 0;
+//            //NSInteger w = 40;
+//            NSInteger h = 100;//height
+//            NSInteger g = 40;//間隔
+//            
+//            if( (i % 2) == 0) {
+//                x = 49;
+//                y = y1 + 0.5*( h + g )* (i-1);
+//            }
+//            else {
+//                x = 220;
+//                y = y1 + 0.5*( h + g )* (i-2);
+//            }
+//            UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(x, y, 34, 98)];
+//            [bgView setBackgroundColor:[UIColor grayColor]];
+//            UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 34, 98)];
+//            
+//            //[imageView setImage:[UIImage imageNamed:[imageArray2 objectAtIndex:i]]];
+//            //imageView.image = [imageArray2 objectAtIndex:i];
+//            //先試試都放default
+//            imageView.image = [showPicArray objectAtIndex:i];
+//            
+//            [imageView setContentMode:UIViewContentModeScaleAspectFill];
+//            [bgView addSubview:imageView];
+//                        
+//            [imageList addObject:bgView];
+//            
+//            UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(x+5, y+5, 90, 110)];
+//            button.backgroundColor = [UIColor grayColor];
+//            
+//            button.alpha = 1;
+//            [buttonList addObject:button];
+//            [button setTag:i];
+//            [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+//            [self.backgroundScrollView addSubview:bgView];
+//            [self.backgroundScrollView addSubview:button];
             
-            NSInteger x = 40;
-            NSInteger y1 = 46;
-            NSInteger y = 0;
-            //NSInteger w = 40;
-            NSInteger h = 100;//height
-            NSInteger g = 40;//間隔
-            
-            if( (i % 2) == 0) {
-                x = 49;
-                y = y1 + 0.5*( h + g )* (i-1);
-            }
-            else {
-                x = 220;
-                y = y1 + 0.5*( h + g )* (i-2);
-            }
-            UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(x, y, 34, 98)];
-            [bgView setBackgroundColor:[UIColor grayColor]];
-            UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 34, 98)];
-            
-            //[imageView setImage:[UIImage imageNamed:[imageArray2 objectAtIndex:i]]];
-            //imageView.image = [imageArray2 objectAtIndex:i];
-            //先試試都放default
-            imageView.image = [showPicArray objectAtIndex:i];
-            
-            [imageView setContentMode:UIViewContentModeScaleAspectFill];
-            [bgView addSubview:imageView];
-                        
-            [imageList addObject:bgView];
-            
-            UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(x+5, y+5, 90, 110)];
-            button.backgroundColor = [UIColor grayColor];
-            
-            button.alpha = 1;
-            [buttonList addObject:button];
-            [button setTag:i];
-            [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-            [self.backgroundScrollView addSubview:bgView];
-            [self.backgroundScrollView addSubview:button];
-            
-        }
+       // }
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"HTTP Error");
@@ -441,4 +483,19 @@
     _myBook = myNewBook;
 }
 
+- (void)logoutButtonClicked:(id)sender
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults removeObjectForKey:@"Logintype"];
+    [defaults removeObjectForKey:@"GeneralAccessTokenKey"];
+    [defaults removeObjectForKey:@"FBAccessTokenKey"];
+    [defaults removeObjectForKey:@"FBExpirationDateKey"];
+    [defaults removeObjectForKey:@"UserName"];
+    [defaults removeObjectForKey:@"NickName"];
+    [defaults removeObjectForKey:@"FBID"];
+    [defaults removeObjectForKey:@"Photo"];
+    [defaults synchronize];
+    
+    [FBSession.activeSession closeAndClearTokenInformation];
+}
 @end

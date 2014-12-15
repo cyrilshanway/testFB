@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testFB/ViewController.m"
-            timestampString = "439467762.500072"
+            timestampString = "439896336.99983"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "441"
-            endingLineNumber = "441"
+            startingLineNumber = "482"
+            endingLineNumber = "482"
             landmarkName = "-buttonPressed:"
             landmarkType = "5">
          </BreakpointContent>
@@ -73,7 +73,7 @@
                   symbolName = "__46-[tableShowBookViewController getDuReadingURL]_block_invoke"
                   moduleName = "testFB"
                   urlString = "file:///Users/Way/Desktop/testFB/testFB/tableShowBookViewController.m"
-                  timestampString = "439615201.908243"
+                  timestampString = "439900832.498006"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "293"
@@ -87,7 +87,7 @@
                   symbolName = "__46-[tableShowBookViewController getDuReadingURL]_block_invoke"
                   moduleName = "testFB"
                   urlString = "file:///Users/Way/Desktop/testFB/testFB/tableShowBookViewController.m"
-                  timestampString = "439615201.908585"
+                  timestampString = "439900832.498388"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "293"
@@ -101,7 +101,7 @@
                   symbolName = "__46-[tableShowBookViewController getDuReadingURL]_block_invoke116"
                   moduleName = "testFB"
                   urlString = "file:///Users/Way/Desktop/testFB/testFB/tableShowBookViewController.m"
-                  timestampString = "439615201.908929"
+                  timestampString = "439900832.498739"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "293"
@@ -124,22 +124,6 @@
             startingLineNumber = "304"
             endingLineNumber = "304"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "testFB/ViewController.m"
-            timestampString = "439467762.500072"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "411"
-            endingLineNumber = "411"
-            landmarkName = "-getDuReadingURL"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -213,122 +197,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "testFB/ViewController.m"
-            timestampString = "439467471.724416"
+            filePath = "testFB/HomeViewController.m"
+            timestampString = "439793330.762289"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
-            landmarkName = "-loadData"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "testFB/ViewController.m"
-            timestampString = "439467528.63556"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
-            landmarkName = "-loadData"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-loginButtonClicked:"
             landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__26-[ViewController loadData]_block_invoke"
+                  symbolName = "__41-[HomeViewController loginButtonClicked:]_block_invoke_2"
                   moduleName = "testFB"
-                  urlString = "file:///Users/Way/Desktop/testFB/testFB/ViewController.m"
-                  timestampString = "439615201.922577"
+                  urlString = "file:///Users/Way/Desktop/testFB/testFB/HomeViewController.m"
+                  timestampString = "439900832.507097"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "200"
-                  endingLineNumber = "200"
-                  offsetFromSymbolStart = "633">
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "1428">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__26-[ViewController loadData]_block_invoke"
+                  symbolName = "__41-[HomeViewController loginButtonClicked:]_block_invoke_3"
                   moduleName = "testFB"
-                  urlString = "file:///Users/Way/Desktop/testFB/testFB/ViewController.m"
-                  timestampString = "439615201.922907"
+                  urlString = "file:///Users/Way/Desktop/testFB/testFB/HomeViewController.m"
+                  timestampString = "439900832.507479"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "200"
-                  endingLineNumber = "200"
-                  offsetFromSymbolStart = "823">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__26-[ViewController loadData]_block_invoke70"
-                  moduleName = "testFB"
-                  urlString = "file:///Users/Way/Desktop/testFB/testFB/ViewController.m"
-                  timestampString = "439615201.923237"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "200"
-                  endingLineNumber = "200"
-                  offsetFromSymbolStart = "74">
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "43">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "testFB/ViewController.m"
-            timestampString = "439467762.500072"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "240"
-            endingLineNumber = "240"
-            landmarkName = "-getDuReadingURL"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "testFB/ViewController.m"
-            timestampString = "439467746.187232"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "270"
-            endingLineNumber = "270"
-            landmarkName = "-getDuReadingURL"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "testFB/ViewController.m"
-            timestampString = "439467970.124472"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
-            landmarkName = "-getDuReadingURL"
-            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
